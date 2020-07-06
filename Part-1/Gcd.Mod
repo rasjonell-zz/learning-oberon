@@ -9,23 +9,23 @@ IMPORT Texts, Oberon;
         Texts.OpenScanner(S, Oberon.Par.text, Oberon.Par.pos);
 
         Texts.Scan(S); x := S.i;
-        Texts.WriteString(W, " x = ");
+        Texts.WriteString(W, "x = ");
         Texts.WriteInt(W, x, 1);
         Texts.WriteLn(W);
 
         Texts.Scan(S); y := S.i;
-        Texts.WriteString(W, " y = ");
+        Texts.WriteString(W, "y = ");
         Texts.WriteInt(W, y, 1);
         Texts.WriteLn(W);
 
         WHILE x # y DO
             IF x > y
-                THEN x := x - y
-                ELSE y := y - x
+            THEN x := x - y
+            ELSE y := y - x
             END
         END;
 
-        Texts.WriteString(W, " gcd = ");
+        Texts.WriteString(W, "gcd = ");
         Texts.WriteInt(W, x, 1);
         Texts.WriteLn(W);
         Texts.Append(Oberon.Log, W.buf);
