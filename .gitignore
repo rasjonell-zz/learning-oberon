@@ -1,5 +1,2 @@
-*
-!*.mod
-!Makefile
-!.gitignore
-!README.md
+*.c
+*.h
